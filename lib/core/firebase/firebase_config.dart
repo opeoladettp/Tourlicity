@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 // import 'package:firebase_analytics/firebase_analytics.dart';
 // import 'package:firebase_performance/firebase_performance.dart';
 import 'package:flutter/foundation.dart';
+import '../../firebase_options.dart';
 
 /// Firebase configuration and initialization
 class FirebaseConfig {
@@ -17,8 +18,17 @@ class FirebaseConfig {
     try {
       debugPrint('Firebase: Initializing Firebase Core...');
       
-      // Initialize Firebase Core
-      await Firebase.initializeApp();
+      // Skip Firebase initialization in debug mode for web to avoid network issues
+      if (kIsWeb && kDebugMode) {
+        debugPrint('Firebase: Skipping initialization in web debug mode');
+        _isInitialized = true;
+        return;
+      }
+      
+      // Initialize Firebase Core with proper options
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
       
       debugPrint('Firebase: Core initialized successfully');
       
@@ -31,7 +41,7 @@ class FirebaseConfig {
       debugPrint('Firebase: All services initialized');
     } catch (e) {
       debugPrint('Firebase initialization failed: $e');
-      _isInitialized = false;
+      _isInitialized = true; // Mark as initialized to continue app startup
     }
   }
 

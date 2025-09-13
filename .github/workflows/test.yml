@@ -1,0 +1,237 @@
+name: Test Suite
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.16.0'
+        channel: 'stable'
+    
+    - name: Get dependencies
+      run: flutter pub get
+    
+    - name: Verify formatting
+      run: dart format --output=none --set-exit-if-changed .
+    
+    - name: Analyze project source
+      run: flutter analyze
+    
+    - name: Run unit tests
+      run: flutter test --coverage
+    
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: coverage/lcov.info
+    
+    - name: Run integration tests
+      run: flutter test integration_test/
+    
+    - name: Run performance tests
+      run: flutter test test/performance/
+    
+    - name: Generate golden test files
+      run: flutter test --update-goldens test/golden/
+    
+    - name: Build APK
+      run: flutter build apk --debug
+    
+    - name: Build iOS (if on macOS)
+      if: runner.os == 'macOS'
+      run: flutter build ios --no-codesign
+
+  widget-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.16.0'
+        channel: 'stable'
+    
+    - name: Get dependencies
+      run: flutter pub get
+    
+    - name: Run widget tests
+      run: flutter test test/presentation/widgets/
+    
+    - name: Run page tests
+      run: flutter test test/presentation/pages/
+
+  integration-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.16.0'
+        channel: 'stable'
+    
+    - name: Get dependencies
+      run: flutter pub get
+    
+    - name: Run auth flow tests
+      run: flutter test test/integration/auth_flow_integration_test.dart
+    
+    - name: Run tour registration tests
+      run: flutter test test/integration/tour_registration_flow_test.dart
+    
+    - name: Run navigation tests
+      run: flutter test test/integration/navigation_integration_test.dart
+
+  e2e-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.16.0'
+        channel: 'stable'
+    
+    - name: Get dependencies
+      run: flutter pub get
+    
+    - name: Run E2E tests
+      run: flutter test test/e2e/
+    
+    - name: Upload E2E test results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: e2e-test-results
+        path: test/e2e/results/
+
+  performance-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.16.0'
+        channel: 'stable'
+    
+    - name: Get dependencies
+      run: flutter pub get
+    
+    - name: Run performance tests
+      run: flutter test test/performance/
+    
+    - name: Run memory leak tests
+      run: flutter test test/performance/memory_leak_test.dart
+    
+    - name: Generate performance report
+      run: |
+        echo "Performance test results:" > performance_report.txt
+        flutter test test/performance/ --reporter=json >> performance_report.txt
+    
+    - name: Upload performance report
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-report
+        path: performance_report.txt
+
+  security-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.16.0'
+        channel: 'stable'
+    
+    - name: Get dependencies
+      run: flutter pub get
+    
+    - name: Run security tests
+      run: flutter test test/security/
+    
+    - name: Run penetration test scenarios
+      run: flutter test test/security/penetration_test_scenarios.dart
+
+  accessibility-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.16.0'
+        channel: 'stable'
+    
+    - name: Get dependencies
+      run: flutter pub get
+    
+    - name: Run accessibility tests
+      run: flutter test test/integration/accessibility_integration_test.dart
+    
+    - name: Run keyboard navigation tests
+      run: flutter test test/core/accessibility/keyboard_navigation_test.dart
+
+  coverage-report:
+    needs: [test, widget-tests, integration-tests]
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.16.0'
+        channel: 'stable'
+    
+    - name: Get dependencies
+      run: flutter pub get
+    
+    - name: Run all tests with coverage
+      run: flutter test --coverage
+    
+    - name: Generate coverage report
+      run: |
+        sudo apt-get update
+        sudo apt-get install lcov
+        genhtml coverage/lcov.info -o coverage/html
+    
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: coverage/html/
+    
+    - name: Check coverage threshold
+      run: |
+        COVERAGE=$(lcov --summary coverage/lcov.info | grep "lines" | awk '{print $2}' | sed 's/%//')
+        echo "Coverage: $COVERAGE%"
+        if (( $(echo "$COVERAGE < 80" | bc -l) )); then
+          echo "Coverage is below 80%"
+          exit 1
+        fi

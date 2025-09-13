@@ -1,0 +1,425 @@
+Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
+
+Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
+
+Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
+
+Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
+
+Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
+
+Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
+
+Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
+
+Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
+
+Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
+
+Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
+
+Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
+
+Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
+
+Analyzing tourlicity_app...                                     
+
+   info - Don't invoke 'print' in production code - lib\core\network\api_client_factory.dart:29:11 - avoid_print
+   info - The member 'data' overrides an inherited member but isn't annotated with '@override' - lib\core\network\api_result.dart:39:11 - annotate_overrides
+warning - The value of the local variable 'file' isn't used - lib\core\network\dio_api_client.dart:188:13 - unused_local_variable
+warning - This default clause is covered by the previous cases - lib\core\network\dio_api_client.dart:237:7 - unreachable_switch_default
+   info - Use 'const' with the constructor to improve performance - lib\core\network\error_interceptor.dart:24:16 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\network\error_interceptor.dart:31:16 - prefer_const_constructors
+warning - Unnecessary type check; the result is always 'true' - lib\data\repositories\provider_repository_impl.dart:45:13 - unnecessary_type_check
+warning - Dead code - lib\data\repositories\provider_repository_impl.dart:57:5 - dead_code
+  error - A value of type 'ApiResult<List<dynamic>>' can't be returned from the method 'getProviders' because it has a return type of 'Future<ApiResult<List<Provider>>>' - lib\data\repositories\provider_repository_impl.dart:57:12 - return_of_invalid_type
+warning - Dead code - lib\data\repositories\provider_repository_impl.dart:72:5 - dead_code
+  error - A value of type 'ApiResult<Map<String, dynamic>>' can't be returned from the method 'getProviderById' because it has a return type of 'Future<ApiResult<Provider>>' - lib\data\repositories\provider_repository_impl.dart:72:12 - return_of_invalid_type
+warning - Dead code - lib\data\repositories\provider_repository_impl.dart:97:5 - dead_code
+  error - A value of type 'ApiResult<Map<String, dynamic>>' can't be returned from the method 'createProvider' because it has a return type of 'Future<ApiResult<Provider>>' - lib\data\repositories\provider_repository_impl.dart:97:12 - return_of_invalid_type
+warning - Dead code - lib\data\repositories\provider_repository_impl.dart:123:5 - dead_code
+  error - A value of type 'ApiResult<Map<String, dynamic>>' can't be returned from the method 'updateProvider' because it has a return type of 'Future<ApiResult<Provider>>' - lib\data\repositories\provider_repository_impl.dart:123:12 - return_of_invalid_type
+warning - Dead code - lib\data\repositories\provider_repository_impl.dart:138:5 - dead_code
+  error - A value of type 'ApiResult<Map<String, dynamic>>' can't be returned from the method 'activateProvider' because it has a return type of 'Future<ApiResult<Provider>>' - lib\data\repositories\provider_repository_impl.dart:138:12 - return_of_invalid_type
+warning - Dead code - lib\data\repositories\provider_repository_impl.dart:153:5 - dead_code
+  error - A value of type 'ApiResult<Map<String, dynamic>>' can't be returned from the method 'deactivateProvider' because it has a return type of 'Future<ApiResult<Provider>>' - lib\data\repositories\provider_repository_impl.dart:153:12 - return_of_invalid_type
+warning - Unnecessary type check; the result is always 'true' - lib\data\repositories\provider_repository_impl.dart:171:13 - unnecessary_type_check
+warning - Dead code - lib\data\repositories\provider_repository_impl.dart:183:5 - dead_code
+warning - Unnecessary type check; the result is always 'true' - lib\data\repositories\tour_template_repository_impl.dart:52:13 - unnecessary_type_check
+warning - Dead code - lib\data\repositories\tour_template_repository_impl.dart:64:5 - dead_code
+  error - A value of type 'ApiResult<List<dynamic>>' can't be returned from the method 'getTourTemplates' because it has a return type of 'Future<ApiResult<List<TourTemplate>>>' - lib\data\repositories\tour_template_repository_impl.dart:64:12 - return_of_invalid_type
+warning - Dead code - lib\data\repositories\tour_template_repository_impl.dart:79:5 - dead_code
+  error - A value of type 'ApiResult<Map<String, dynamic>>' can't be returned from the method 'getTourTemplateById' because it has a return type of 'Future<ApiResult<TourTemplate>>' - lib\data\repositories\tour_template_repository_impl.dart:79:12 - return_of_invalid_type
+  error - The method 'when' isn't defined for the type 'ApiResult' - lib\data\repositories\tour_template_repository_impl.dart:96:19 - undefined_method
+  error - The method 'success' isn't defined for the type 'ApiResult' - lib\data\repositories\tour_template_repository_impl.dart:99:26 - undefined_method
+  error - The method 'failure' isn't defined for the type 'ApiResult' - lib\data\repositories\tour_template_repository_impl.dart:101:37 - undefined_method
+warning - Dead code - lib\data\repositories\tour_template_repository_impl.dart:104:5 - dead_code
+  error - The method 'when' isn't defined for the type 'ApiResult' - lib\data\repositories\tour_template_repository_impl.dart:121:19 - undefined_method
+  error - The method 'success' isn't defined for the type 'ApiResult' - lib\data\repositories\tour_template_repository_impl.dart:124:26 - undefined_method
+  error - The method 'failure' isn't defined for the type 'ApiResult' - lib\data\repositories\tour_template_repository_impl.dart:126:37 - undefined_method
+warning - Dead code - lib\data\repositories\tour_template_repository_impl.dart:129:5 - dead_code
+warning - Dead code - lib\data\repositories\tour_template_repository_impl.dart:144:5 - dead_code
+  error - A value of type 'ApiResult<Map<String, dynamic>>' can't be returned from the method 'activateTourTemplate' because it has a return type of 'Future<ApiResult<TourTemplate>>' - lib\data\repositories\tour_template_repository_impl.dart:144:12 - return_of_invalid_type
+warning - Dead code - lib\data\repositories\tour_template_repository_impl.dart:159:5 - dead_code
+  error - A value of type 'ApiResult<Map<String, dynamic>>' can't be returned from the method 'deactivateTourTemplate' because it has a return type of 'Future<ApiResult<TourTemplate>>' - lib\data\repositories\tour_template_repository_impl.dart:159:12 - return_of_invalid_type
+warning - Unnecessary type check; the result is always 'true' - lib\data\repositories\tour_template_repository_impl.dart:177:13 - unnecessary_type_check
+warning - Dead code - lib\data\repositories\tour_template_repository_impl.dart:189:5 - dead_code
+  error - The name 'Provider' isn't a type, so it can't be used as a type argument - lib\presentation\blocs\provider\provider_bloc.dart:48:28 - non_type_as_type_argument
+  error - The name 'Provider' isn't a type, so it can't be used as a type argument - lib\presentation\blocs\provider\provider_bloc.dart:75:28 - non_type_as_type_argument
+  error - Undefined class 'Provider' - lib\presentation\blocs\provider\provider_bloc.dart:285:30 - undefined_class
+warning - The member 'emit' can only be used within 'package:bloc/src/bloc.dart' or a test - lib\presentation\blocs\provider\provider_bloc.dart:292:7 - invalid_use_of_visible_for_testing_member
+warning - The member 'emit' can only be used within 'package:bloc/src/bloc.dart' or a test - lib\presentation\blocs\provider\provider_bloc.dart:304:7 - invalid_use_of_visible_for_testing_member
+warning - The member 'emit' can only be used within 'package:bloc/src/bloc.dart' or a test - lib\presentation\blocs\tour_template\tour_template_bloc.dart:299:7 - invalid_use_of_visible_for_testing_member
+warning - The member 'emit' can only be used within 'package:bloc/src/bloc.dart' or a test - lib\presentation\blocs\tour_template\tour_template_bloc.dart:311:7 - invalid_use_of_visible_for_testing_member
+warning - Unused import: '../../blocs/provider/provider_event.dart' - lib\presentation\pages\provider\provider_form_page.dart:5:8 - unused_import
+  error - The method 'ProviderUpdateRequested' isn't defined for the type '_ProviderFormPageState' - lib\presentation\pages\provider\provider_form_page.dart:174:42 - undefined_method
+  error - The method 'ProviderCreateRequested' isn't defined for the type '_ProviderFormPageState' - lib\presentation\pages\provider\provider_form_page.dart:176:42 - undefined_method
+  error - The named parameter 'currentCountry' isn't defined - lib\presentation\pages\provider\provider_list_page.dart:98:9 - undefined_named_parameter
+  error - The named parameter 'currentIsActive' isn't defined - lib\presentation\pages\provider\provider_list_page.dart:99:9 - undefined_named_parameter
+  error - The named parameter 'onFilterChanged' isn't defined - lib\presentation\pages\provider\provider_list_page.dart:100:9 - undefined_named_parameter
+  error - The named parameter 'onChanged' is required, but there's no corresponding argument - lib\presentation\pages\provider\provider_list_page.dart:187:20 - missing_required_argument
+  error - The named parameter 'controller' isn't defined - lib\presentation\pages\provider\provider_list_page.dart:188:15 - undefined_named_parameter
+  error - The named parameter 'onSearch' isn't defined - lib\presentation\pages\provider\provider_list_page.dart:189:15 - undefined_named_parameter
+  error - The named parameter 'onAction' isn't defined - lib\presentation\pages\provider\provider_list_page.dart:248:27 - undefined_named_parameter
+  error - The named parameter 'onAction' isn't defined - lib\presentation\pages\provider\provider_list_page.dart:275:27 - undefined_named_parameter
+warning - The left operand can't be null, so the right operand is never executed - lib\presentation\pages\tour_template\tour_template_form_page.dart:46:61 - dead_null_aware_expression
+   info - 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre - lib\presentation\widgets\common\loading_widget.dart:94:50 - deprecated_member_use
+warning - The left operand can't be null, so the right operand is never executed - lib\presentation\widgets\forms\profile_edit_form.dart:31:81 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\presentation\widgets\forms\profile_edit_form.dart:32:79 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\presentation\widgets\forms\profile_edit_form.dart:205:65 - dead_null_aware_expression
+warning - The left operand can't be null, so the right operand is never executed - lib\presentation\widgets\forms\profile_edit_form.dart:206:48 - dead_null_aware_expression
+   info - Use 'const' with the constructor to improve performance - lib\presentation\widgets\provider\provider_list_item.dart:68:19 - prefer_const_constructors
+warning - The operand can't be 'null', so the condition is always 'true' - lib\presentation\widgets\tour_template\tour_template_list_item.dart:36:48 - unnecessary_null_comparison
+warning - The '!' will have no effect because the receiver can't be null - lib\presentation\widgets\tour_template\tour_template_list_item.dart:39:47 - unnecessary_non_null_assertion
+   info - 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre - lib\presentation\widgets\tour_template\tour_template_search_bar.dart:41:50 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - test\core\navigation\app_router_test.dart:44:26 - prefer_const_constructors
+  error - The named parameter 'user' is required, but there's no corresponding argument - test\core\navigation\app_router_test.dart:44:26 - missing_required_argument
+  error - The named parameter 'id' isn't defined - test\core\navigation\app_router_test.dart:45:11 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - test\core\navigation\app_router_test.dart:46:11 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\core\navigation\app_router_test.dart:47:11 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\core\navigation\app_router_test.dart:48:11 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\core\navigation\app_router_test.dart:49:11 - undefined_named_parameter
+   info - Use 'const' with the constructor to improve performance - test\core\navigation\app_router_test.dart:67:26 - prefer_const_constructors
+  error - The named parameter 'user' is required, but there's no corresponding argument - test\core\navigation\app_router_test.dart:67:26 - missing_required_argument
+  error - The named parameter 'id' isn't defined - test\core\navigation\app_router_test.dart:68:11 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - test\core\navigation\app_router_test.dart:69:11 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\core\navigation\app_router_test.dart:70:11 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\core\navigation\app_router_test.dart:71:11 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\core\navigation\app_router_test.dart:72:11 - undefined_named_parameter
+   info - Use 'const' with the constructor to improve performance - test\core\navigation\app_router_test.dart:90:26 - prefer_const_constructors
+  error - The named parameter 'user' is required, but there's no corresponding argument - test\core\navigation\app_router_test.dart:90:26 - missing_required_argument
+  error - The named parameter 'id' isn't defined - test\core\navigation\app_router_test.dart:91:11 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - test\core\navigation\app_router_test.dart:92:11 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\core\navigation\app_router_test.dart:93:11 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\core\navigation\app_router_test.dart:94:11 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\core\navigation\app_router_test.dart:95:11 - undefined_named_parameter
+   info - Use 'const' with the constructor to improve performance - test\core\navigation\app_router_test.dart:113:26 - prefer_const_constructors
+  error - The named parameter 'user' is required, but there's no corresponding argument - test\core\navigation\app_router_test.dart:113:26 - missing_required_argument
+  error - The named parameter 'id' isn't defined - test\core\navigation\app_router_test.dart:114:11 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - test\core\navigation\app_router_test.dart:115:11 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\core\navigation\app_router_test.dart:116:11 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\core\navigation\app_router_test.dart:117:11 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\core\navigation\app_router_test.dart:118:11 - undefined_named_parameter
+   info - Use 'const' with the constructor to improve performance - test\core\navigation\app_router_test.dart:138:26 - prefer_const_constructors
+  error - The named parameter 'user' is required, but there's no corresponding argument - test\core\navigation\app_router_test.dart:138:26 - missing_required_argument
+  error - The named parameter 'id' isn't defined - test\core\navigation\app_router_test.dart:139:11 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - test\core\navigation\app_router_test.dart:140:11 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\core\navigation\app_router_test.dart:141:11 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\core\navigation\app_router_test.dart:142:11 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\core\navigation\app_router_test.dart:143:11 - undefined_named_parameter
+   info - Use 'const' with the constructor to improve performance - test\core\navigation\app_router_test.dart:166:26 - prefer_const_constructors
+  error - The named parameter 'user' is required, but there's no corresponding argument - test\core\navigation\app_router_test.dart:166:26 - missing_required_argument
+  error - The named parameter 'id' isn't defined - test\core\navigation\app_router_test.dart:167:11 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - test\core\navigation\app_router_test.dart:168:11 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\core\navigation\app_router_test.dart:169:11 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\core\navigation\app_router_test.dart:170:11 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\core\navigation\app_router_test.dart:171:11 - undefined_named_parameter
+  error - Undefined name 'UserType' - test\core\navigation\app_router_test.dart:233:42 - undefined_identifier
+  error - Undefined name 'UserType' - test\core\navigation\app_router_test.dart:235:42 - undefined_identifier
+  error - Undefined name 'UserType' - test\core\navigation\app_router_test.dart:237:42 - undefined_identifier
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\core\navigation\app_router_test.dart:242:28 - missing_required_argument
+  error - Undefined name 'UserType' - test\core\navigation\app_router_test.dart:247:19 - undefined_identifier
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\core\navigation\app_router_test.dart:252:30 - missing_required_argument
+  error - Undefined name 'UserType' - test\core\navigation\app_router_test.dart:257:19 - undefined_identifier
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\core\navigation\navigation_guard_test.dart:14:25 - missing_required_argument
+  error - Undefined name 'UserType' - test\core\navigation\navigation_guard_test.dart:19:19 - undefined_identifier
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\core\navigation\navigation_guard_test.dart:24:27 - missing_required_argument
+  error - Undefined name 'UserType' - test\core\navigation\navigation_guard_test.dart:29:19 - undefined_identifier
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\core\navigation\navigation_guard_test.dart:35:21 - missing_required_argument
+  error - Undefined name 'UserType' - test\core\navigation\navigation_guard_test.dart:40:19 - undefined_identifier
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\core\navigation\navigation_guard_test.dart:45:24 - missing_required_argument
+  error - Undefined name 'UserType' - test\core\navigation\navigation_guard_test.dart:50:19 - undefined_identifier
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:59:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:60:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:61:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:65:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:66:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:67:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:71:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:72:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:73:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:79:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:80:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:81:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:85:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:86:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:87:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:91:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:92:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:93:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:99:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:100:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:101:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:102:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:106:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:107:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:108:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:109:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:113:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:114:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:115:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:116:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:129:36 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:130:36 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:131:36 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:138:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:139:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:140:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:141:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:147:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:148:34 - undefined_method
+  error - The method 'hasAccess' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:149:34 - undefined_method
+  error - The method 'getRedirectRoute' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:156:32 - undefined_method
+  error - The method 'getRedirectRoute' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:158:32 - undefined_method
+  error - The method 'getRedirectRoute' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:163:32 - undefined_method
+  error - The method 'getRedirectRoute' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:165:32 - undefined_method
+  error - The method 'getRedirectRoute' isn't defined for the type 'NavigationGuard' - test\core\navigation\navigation_guard_test.dart:167:32 - undefined_method
+  error - Abstract classes can't be instantiated - test\core\network\api_client_test.dart:27:19 - instantiate_abstract_class
+  error - The named parameter 'tokenStorage' isn't defined - test\core\network\api_client_test.dart:28:9 - undefined_named_parameter
+  error - The named parameter 'dio' isn't defined - test\core\network\api_client_test.dart:29:9 - undefined_named_parameter
+  error - The getter 'statusCode' isn't defined for the type 'ApiSuccess<Map<String, dynamic>>' - test\core\network\api_client_test.dart:57:24 - undefined_getter
+  error - The named parameter 'fromJson' isn't defined - test\core\network\api_client_test.dart:79:11 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\core\network\api_client_test.dart:107:11 - undefined_named_parameter
+  error - The getter 'statusCode' isn't defined for the type 'ApiSuccess<Map<String, dynamic>>' - test\core\network\api_client_test.dart:172:24 - undefined_getter
+  error - The getter 'statusCode' isn't defined for the type 'ApiSuccess<void>' - test\core\network\api_client_test.dart:231:24 - undefined_getter
+  error - The method 'downloadFile' isn't defined for the type 'ApiClient' - test\core\network\api_client_test.dart:273:40 - undefined_method
+  error - The method 'clearTokens' isn't defined for the type 'ApiClient' - test\core\network\api_client_test.dart:286:25 - undefined_method
+  error - The named parameter 'statusCode' isn't defined - test\core\network\api_result_test.dart:16:11 - undefined_named_parameter
+  error - The named parameter 'message' isn't defined - test\core\network\api_result_test.dart:17:11 - undefined_named_parameter
+  error - The getter 'statusCode' isn't defined for the type 'ApiSuccess<String>' - test\core\network\api_result_test.dart:22:23 - undefined_getter
+  error - The getter 'message' isn't defined for the type 'ApiSuccess<String>' - test\core\network\api_result_test.dart:23:23 - undefined_getter
+  error - The getter 'props' isn't defined for the type 'ApiSuccess<String>' - test\core\network\api_result_test.dart:24:23 - undefined_getter
+  error - The named parameter 'originalError' isn't defined - test\core\network\api_result_test.dart:50:11 - undefined_named_parameter
+  error - The getter 'originalError' isn't defined for the type 'ApiFailure<String>' - test\core\network\api_result_test.dart:57:23 - undefined_getter
+  error - The getter 'props' isn't defined for the type 'ApiFailure<String>' - test\core\network\api_result_test.dart:58:23 - undefined_getter
+  error - The named parameter 'secureStorage' isn't defined - test\core\network\token_storage_test.dart:17:41 - undefined_named_parameter
+warning - Unused import: 'package:tourlicity_app/domain/entities/auth_user.dart' - test\data\repositories\auth_repository_impl_test.dart:10:8 - unused_import
+warning - The getter doesn't override an inherited getter - test\data\repositories\auth_repository_impl_test.mocks.dart:52:15 - override_on_non_overriding_member
+  error - 'MockApiClient.get' ('Future<ApiResult<T>> Function<T>(String?, {T Function(dynamic)? fromJson, Options? options, Map<String, dynamic>? queryParameters})') isn't a valid override of 'ApiClient.get' ('Future<ApiResult<T>> Function<T>(String, {Map<String, String>? headers, Map<String, dynamic>? queryParameters})') - test\data\repositories\auth_repository_impl_test.mocks.dart:61:32 - invalid_override
+  error - 'MockApiClient.post' ('Future<ApiResult<T>> Function<T>(String?, {dynamic data, T Function(dynamic)? fromJson, Options? options, Map<String, dynamic>? queryParameters})') isn't a valid override of 'ApiClient.post' ('Future<ApiResult<T>> Function<T>(String, {dynamic data, Map<String, String>? headers, Map<String, dynamic>? queryParameters})') - test\data\repositories\auth_repository_impl_test.mocks.dart:93:32 - invalid_override
+  error - 'MockApiClient.put' ('Future<ApiResult<T>> Function<T>(String?, {dynamic data, T Function(dynamic)? fromJson, Options? options, Map<String, dynamic>? queryParameters})') isn't a valid override of 'ApiClient.put' ('Future<ApiResult<T>> Function<T>(String, {dynamic data, Map<String, String>? headers, Map<String, dynamic>? queryParameters})') - test\data\repositories\auth_repository_impl_test.mocks.dart:128:32 - invalid_override
+  error - 'MockApiClient.patch' ('Future<ApiResult<T>> Function<T>(String?, {dynamic data, T Function(dynamic)? fromJson, Options? options, Map<String, dynamic>? queryParameters})') isn't a valid override of 'ApiClient.patch' ('Future<ApiResult<T>> Function<T>(String, {dynamic data, Map<String, String>? headers, Map<String, dynamic>? queryParameters})') - test\data\repositories\auth_repository_impl_test.mocks.dart:163:32 - invalid_override
+  error - 'MockApiClient.delete' ('Future<ApiResult<T>> Function<T>(String?, {dynamic data, T Function(dynamic)? fromJson, Options? options, Map<String, dynamic>? queryParameters})') isn't a valid override of 'ApiClient.delete' ('Future<ApiResult<T>> Function<T>(String, {Map<String, String>? headers, Map<String, dynamic>? queryParameters})') - test\data\repositories\auth_repository_impl_test.mocks.dart:198:32 - invalid_override
+  error - 'MockApiClient.uploadFile' ('Future<ApiResult<T>> Function<T>(String?, {Map<String, dynamic>? fields, required File? file, required String? fileFieldName, T Function(dynamic)? fromJson, void Function(int, int)? onSendProgress})') isn't a valid override of 'ApiClient.uploadFile' ('Future<ApiResult<T>> Function<T>(String, String, {String fieldName, Map<String, String>? fields, Map<String, String>? headers})') - test\data\repositories\auth_repository_impl_test.mocks.dart:233:32 - invalid_override
+warning - The method doesn't override an inherited method - test\data\repositories\auth_repository_impl_test.mocks.dart:271:35 - override_on_non_overriding_member
+warning - The method doesn't override an inherited method - test\data\repositories\auth_repository_impl_test.mocks.dart:307:20 - override_on_non_overriding_member
+   info - Can't use a relative path to import a library in 'lib' - test\data\repositories\user_repository_impl_test.dart:4:8 - avoid_relative_lib_imports
+   info - Can't use a relative path to import a library in 'lib' - test\data\repositories\user_repository_impl_test.dart:5:8 - avoid_relative_lib_imports
+   info - Can't use a relative path to import a library in 'lib' - test\data\repositories\user_repository_impl_test.dart:6:8 - avoid_relative_lib_imports
+   info - Can't use a relative path to import a library in 'lib' - test\data\repositories\user_repository_impl_test.dart:7:8 - avoid_relative_lib_imports
+   info - Can't use a relative path to import a library in 'lib' - test\data\repositories\user_repository_impl_test.dart:8:8 - avoid_relative_lib_imports
+  error - The named parameter 'isProfileComplete' is required, but there's no corresponding argument - test\data\repositories\user_repository_impl_test.dart:17:27 - missing_required_argument
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\data\repositories\user_repository_impl_test.dart:17:27 - missing_required_argument
+  error - The named parameter 'role' is required, but there's no corresponding argument - test\data\repositories\user_repository_impl_test.dart:17:27 - missing_required_argument
+  error - The named parameter 'firstName' isn't defined - test\data\repositories\user_repository_impl_test.dart:20:7 - undefined_named_parameter
+  error - The named parameter 'lastName' isn't defined - test\data\repositories\user_repository_impl_test.dart:21:7 - undefined_named_parameter
+  error - The named parameter 'phone' isn't defined - test\data\repositories\user_repository_impl_test.dart:22:7 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\data\repositories\user_repository_impl_test.dart:23:7 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\data\repositories\user_repository_impl_test.dart:24:7 - undefined_named_parameter
+  error - The named parameter 'createdDate' isn't defined - test\data\repositories\user_repository_impl_test.dart:25:7 - undefined_named_parameter
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\data\repositories\user_repository_impl_test.dart:28:22 - missing_required_argument
+  error - Undefined name 'UserType' - test\data\repositories\user_repository_impl_test.dart:34:17 - undefined_identifier
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:49:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:66:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:74:15 - undefined_named_parameter
+  error - The named parameter 'isProfileComplete' is required, but there's no corresponding argument - test\data\repositories\user_repository_impl_test.dart:96:34 - missing_required_argument
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\data\repositories\user_repository_impl_test.dart:96:34 - missing_required_argument
+  error - The named parameter 'role' is required, but there's no corresponding argument - test\data\repositories\user_repository_impl_test.dart:96:34 - missing_required_argument
+  error - The named parameter 'firstName' isn't defined - test\data\repositories\user_repository_impl_test.dart:99:11 - undefined_named_parameter
+  error - The named parameter 'lastName' isn't defined - test\data\repositories\user_repository_impl_test.dart:100:11 - undefined_named_parameter
+  error - The named parameter 'phone' isn't defined - test\data\repositories\user_repository_impl_test.dart:101:11 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\data\repositories\user_repository_impl_test.dart:102:11 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\data\repositories\user_repository_impl_test.dart:103:11 - undefined_named_parameter
+  error - The named parameter 'createdDate' isn't defined - test\data\repositories\user_repository_impl_test.dart:104:11 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:110:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:134:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:143:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:155:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:164:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:189:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:214:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:223:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:242:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:251:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:278:15 - undefined_named_parameter
+  error - The named parameter 'isProfileComplete' is required, but there's no corresponding argument - test\data\repositories\user_repository_impl_test.dart:292:37 - missing_required_argument
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\data\repositories\user_repository_impl_test.dart:292:37 - missing_required_argument
+  error - The named parameter 'role' is required, but there's no corresponding argument - test\data\repositories\user_repository_impl_test.dart:292:37 - missing_required_argument
+  error - The named parameter 'firstName' isn't defined - test\data\repositories\user_repository_impl_test.dart:295:11 - undefined_named_parameter
+  error - The named parameter 'lastName' isn't defined - test\data\repositories\user_repository_impl_test.dart:296:11 - undefined_named_parameter
+  error - The named parameter 'phone' isn't defined - test\data\repositories\user_repository_impl_test.dart:297:11 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\data\repositories\user_repository_impl_test.dart:298:11 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\data\repositories\user_repository_impl_test.dart:299:11 - undefined_named_parameter
+  error - The named parameter 'createdDate' isn't defined - test\data\repositories\user_repository_impl_test.dart:300:11 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:305:15 - undefined_named_parameter
+  error - The named parameter 'fromJson' isn't defined - test\data\repositories\user_repository_impl_test.dart:321:15 - undefined_named_parameter
+warning - Unused import: 'package:tourlicity_app/core/network/api_result.dart' - test\data\services\google_sign_in_service_test.dart:6:8 - unused_import
+  error - The named parameter 'googleSignIn' isn't defined - test\data\services\google_sign_in_service_test.dart:22:37 - undefined_named_parameter
+  error - This expression has a type of 'void' so its value can't be used - test\data\services\google_sign_in_service_test.dart:97:23 - use_of_void_result
+  error - This expression has a type of 'void' so its value can't be used - test\data\services\google_sign_in_service_test.dart:109:23 - use_of_void_result
+  error - This expression has a type of 'void' so its value can't be used - test\data\services\google_sign_in_service_test.dart:110:23 - use_of_void_result
+  error - The named parameter 'user' is required, but there's no corresponding argument - test\domain\entities\auth_user_test.dart:6:22 - missing_required_argument
+  error - The named parameter 'id' isn't defined - test\domain\entities\auth_user_test.dart:7:7 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - test\domain\entities\auth_user_test.dart:8:7 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\domain\entities\auth_user_test.dart:9:7 - undefined_named_parameter
+  error - The named parameter 'photoUrl' isn't defined - test\domain\entities\auth_user_test.dart:10:7 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\domain\entities\auth_user_test.dart:11:7 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\domain\entities\auth_user_test.dart:12:7 - undefined_named_parameter
+  error - The named parameter 'user' is required, but there's no corresponding argument - test\domain\entities\auth_user_test.dart:29:25 - missing_required_argument
+  error - The named parameter 'id' isn't defined - test\domain\entities\auth_user_test.dart:30:9 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - test\domain\entities\auth_user_test.dart:31:9 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\domain\entities\auth_user_test.dart:32:9 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\domain\entities\auth_user_test.dart:33:9 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\domain\entities\auth_user_test.dart:34:9 - undefined_named_parameter
+  error - The named parameter 'user' is required, but there's no corresponding argument - test\domain\entities\auth_user_test.dart:39:25 - missing_required_argument
+  error - The named parameter 'id' isn't defined - test\domain\entities\auth_user_test.dart:40:9 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - test\domain\entities\auth_user_test.dart:41:9 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\domain\entities\auth_user_test.dart:42:9 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\domain\entities\auth_user_test.dart:43:9 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\domain\entities\auth_user_test.dart:44:9 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\domain\entities\auth_user_test.dart:54:9 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\domain\entities\auth_user_test.dart:55:9 - undefined_named_parameter
+  error - The named parameter 'user' is required, but there's no corresponding argument - test\domain\entities\auth_user_test.dart:67:32 - missing_required_argument
+  error - The named parameter 'id' isn't defined - test\domain\entities\auth_user_test.dart:68:9 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - test\domain\entities\auth_user_test.dart:69:9 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\domain\entities\auth_user_test.dart:70:9 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\domain\entities\auth_user_test.dart:71:9 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\domain\entities\auth_user_test.dart:72:9 - undefined_named_parameter
+  error - The named parameter 'email' is required, but there's no corresponding argument - test\domain\entities\provider_test.dart:11:22 - missing_required_argument
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\domain\entities\provider_test.dart:11:22 - missing_required_argument
+  error - The named parameter 'emailAddress' isn't defined - test\domain\entities\provider_test.dart:44:9 - undefined_named_parameter
+  error - The named parameter 'providerName' isn't defined - test\domain\entities\provider_test.dart:55:55 - undefined_named_parameter
+  error - The named parameter 'country' isn't defined - test\domain\entities\provider_test.dart:58:58 - undefined_named_parameter
+  error - The named parameter 'emailAddress' isn't defined - test\domain\entities\provider_test.dart:70:48 - undefined_named_parameter
+  error - The named parameter 'emailAddress' isn't defined - test\domain\entities\provider_test.dart:82:48 - undefined_named_parameter
+  error - The named parameter 'providerName' isn't defined - test\domain\entities\provider_test.dart:115:9 - undefined_named_parameter
+  error - The named parameter 'email' is required, but there's no corresponding argument - test\domain\entities\provider_test.dart:128:28 - missing_required_argument
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\domain\entities\provider_test.dart:128:28 - missing_required_argument
+  error - The named parameter 'email' is required, but there's no corresponding argument - test\domain\entities\provider_test.dart:150:31 - missing_required_argument
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\domain\entities\provider_test.dart:150:31 - missing_required_argument
+  error - The named parameter 'duration' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:29:26 - missing_required_argument
+  error - The named parameter 'maxParticipants' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:29:26 - missing_required_argument
+  error - The named parameter 'price' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:29:26 - missing_required_argument
+  error - The named parameter 'providerId' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:29:26 - missing_required_argument
+  error - The named parameter 'title' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:29:26 - missing_required_argument
+  error - The named parameter 'startDate' isn't defined - test\domain\entities\tour_template_test.dart:57:9 - undefined_named_parameter
+  error - The named parameter 'endDate' isn't defined - test\domain\entities\tour_template_test.dart:58:9 - undefined_named_parameter
+  error - The named parameter 'startDate' isn't defined - test\domain\entities\tour_template_test.dart:64:9 - undefined_named_parameter
+  error - The named parameter 'endDate' isn't defined - test\domain\entities\tour_template_test.dart:65:9 - undefined_named_parameter
+  error - The named parameter 'startDate' isn't defined - test\domain\entities\tour_template_test.dart:75:9 - undefined_named_parameter
+  error - The named parameter 'endDate' isn't defined - test\domain\entities\tour_template_test.dart:76:9 - undefined_named_parameter
+  error - The named parameter 'startDate' isn't defined - test\domain\entities\tour_template_test.dart:82:9 - undefined_named_parameter
+  error - The named parameter 'endDate' isn't defined - test\domain\entities\tour_template_test.dart:83:9 - undefined_named_parameter
+  error - The named parameter 'templateName' isn't defined - test\domain\entities\tour_template_test.dart:92:59 - undefined_named_parameter
+  error - The named parameter 'startDate' isn't defined - test\domain\entities\tour_template_test.dart:97:9 - undefined_named_parameter
+  error - The named parameter 'endDate' isn't defined - test\domain\entities\tour_template_test.dart:98:9 - undefined_named_parameter
+  error - The named parameter 'startDate' isn't defined - test\domain\entities\tour_template_test.dart:108:9 - undefined_named_parameter
+  error - The named parameter 'endDate' isn't defined - test\domain\entities\tour_template_test.dart:109:9 - undefined_named_parameter
+  error - The named parameter 'startDate' isn't defined - test\domain\entities\tour_template_test.dart:120:9 - undefined_named_parameter
+  error - The named parameter 'endDate' isn't defined - test\domain\entities\tour_template_test.dart:121:9 - undefined_named_parameter
+  error - The named parameter 'startDate' isn't defined - test\domain\entities\tour_template_test.dart:128:9 - undefined_named_parameter
+  error - The named parameter 'endDate' isn't defined - test\domain\entities\tour_template_test.dart:129:9 - undefined_named_parameter
+  error - The named parameter 'templateName' isn't defined - test\domain\entities\tour_template_test.dart:137:9 - undefined_named_parameter
+  error - The named parameter 'duration' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:150:32 - missing_required_argument
+  error - The named parameter 'maxParticipants' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:150:32 - missing_required_argument
+  error - The named parameter 'price' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:150:32 - missing_required_argument
+  error - The named parameter 'providerId' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:150:32 - missing_required_argument
+  error - The named parameter 'title' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:150:32 - missing_required_argument
+  error - The named parameter 'duration' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:174:42 - missing_required_argument
+  error - The named parameter 'maxParticipants' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:174:42 - missing_required_argument
+  error - The named parameter 'price' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:174:42 - missing_required_argument
+  error - The named parameter 'providerId' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:174:42 - missing_required_argument
+  error - The named parameter 'title' is required, but there's no corresponding argument - test\domain\entities\tour_template_test.dart:174:42 - missing_required_argument
+  error - The argument type 'Null' can't be assigned to the parameter type 'String'.  - test\domain\entities\tour_template_test.dart:179:22 - argument_type_not_assignable
+  error - The named parameter 'startDate' isn't defined - test\domain\entities\tour_template_test.dart:191:9 - undefined_named_parameter
+  error - The named parameter 'endDate' isn't defined - test\domain\entities\tour_template_test.dart:192:9 - undefined_named_parameter
+  error - The named parameter 'startDate' isn't defined - test\domain\entities\tour_template_test.dart:198:9 - undefined_named_parameter
+  error - The named parameter 'endDate' isn't defined - test\domain\entities\tour_template_test.dart:199:9 - undefined_named_parameter
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\domain\entities\user_test.dart:11:18 - missing_required_argument
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\domain\entities\user_test.dart:37:37 - missing_required_argument
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\domain\entities\user_test.dart:50:36 - missing_required_argument
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\domain\entities\user_test.dart:63:31 - missing_required_argument
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\domain\entities\user_test.dart:80:30 - missing_required_argument
+  error - The named parameter 'firstName' isn't defined - test\domain\entities\user_test.dart:93:47 - undefined_named_parameter
+  error - The named parameter 'firstName' isn't defined - test\domain\entities\user_test.dart:99:9 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\domain\entities\user_test.dart:100:9 - undefined_named_parameter
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\domain\entities\user_test.dart:112:24 - missing_required_argument
+  error - The named parameter 'userType' isn't defined - test\domain\entities\user_test.dart:130:45 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\domain\entities\user_test.dart:131:47 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\domain\entities\user_test.dart:132:41 - undefined_named_parameter
+  error - Undefined name 'UserType' - test\integration\navigation_integration_test.dart:12:37 - undefined_identifier
+  error - Undefined name 'UserType' - test\integration\navigation_integration_test.dart:16:37 - undefined_identifier
+  error - Undefined name 'UserType' - test\integration\navigation_integration_test.dart:20:37 - undefined_identifier
+  error - Undefined name 'UserType' - test\integration\navigation_integration_test.dart:31:19 - undefined_identifier
+  error - The named parameter 'user' isn't defined - test\integration\navigation_integration_test.dart:41:31 - undefined_named_parameter
+  error - Undefined name 'UserType' - test\integration\navigation_integration_test.dart:52:19 - undefined_identifier
+  error - The named parameter 'user' isn't defined - test\integration\navigation_integration_test.dart:63:31 - undefined_named_parameter
+  error - Undefined name 'UserType' - test\integration\navigation_integration_test.dart:74:19 - undefined_identifier
+  error - The named parameter 'user' isn't defined - test\integration\navigation_integration_test.dart:84:31 - undefined_named_parameter
+  error - Undefined name 'UserType' - test\integration\navigation_integration_test.dart:128:19 - undefined_identifier
+  error - Undefined name 'UserType' - test\integration\navigation_integration_test.dart:140:19 - undefined_identifier
+  error - The named parameter 'user' is required, but there's no corresponding argument - test\presentation\blocs\auth\auth_bloc_test.dart:34:22 - missing_required_argument
+  error - The named parameter 'id' isn't defined - test\presentation\blocs\auth\auth_bloc_test.dart:35:7 - undefined_named_parameter
+  error - The named parameter 'email' isn't defined - test\presentation\blocs\auth\auth_bloc_test.dart:36:7 - undefined_named_parameter
+  error - The named parameter 'name' isn't defined - test\presentation\blocs\auth\auth_bloc_test.dart:37:7 - undefined_named_parameter
+  error - The named parameter 'userType' isn't defined - test\presentation\blocs\auth\auth_bloc_test.dart:38:7 - undefined_named_parameter
+  error - The named parameter 'profileCompleted' isn't defined - test\presentation\blocs\auth\auth_bloc_test.dart:39:7 - undefined_named_parameter
+  error - Undefined name 'UserType' - test\presentation\pages\dashboard\role_based_dashboard_test.dart:41:21 - undefined_identifier
+  error - The named parameter 'user' isn't defined - test\presentation\pages\dashboard\role_based_dashboard_test.dart:50:42 - undefined_named_parameter
+  error - Undefined name 'UserType' - test\presentation\pages\dashboard\role_based_dashboard_test.dart:64:21 - undefined_identifier
+  error - The named parameter 'user' isn't defined - test\presentation\pages\dashboard\role_based_dashboard_test.dart:74:42 - undefined_named_parameter
+  error - Undefined name 'UserType' - test\presentation\pages\dashboard\role_based_dashboard_test.dart:87:21 - undefined_identifier
+  error - The named parameter 'user' isn't defined - test\presentation\pages\dashboard\role_based_dashboard_test.dart:96:42 - undefined_named_parameter
+  error - Undefined name 'UserType' - test\presentation\pages\dashboard\role_based_dashboard_test.dart:111:21 - undefined_identifier
+  error - Undefined name 'UserType' - test\presentation\pages\dashboard\role_based_dashboard_test.dart:137:21 - undefined_identifier
+  error - Undefined name 'UserType' - test\presentation\pages\dashboard\role_based_dashboard_test.dart:169:21 - undefined_identifier
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\presentation\pages\dashboard\role_based_dashboard_test.dart:193:22 - missing_required_argument
+  error - Undefined name 'UserType' - test\presentation\pages\dashboard\role_based_dashboard_test.dart:198:21 - undefined_identifier
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\presentation\pages\dashboard\role_based_dashboard_test.dart:224:22 - missing_required_argument
+  error - Undefined name 'UserType' - test\presentation\pages\dashboard\role_based_dashboard_test.dart:229:21 - undefined_identifier
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\presentation\pages\dashboard\role_based_dashboard_test.dart:254:22 - missing_required_argument
+  error - Undefined name 'UserType' - test\presentation\pages\dashboard\role_based_dashboard_test.dart:259:21 - undefined_identifier
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\presentation\pages\dashboard\role_based_dashboard_test.dart:285:22 - missing_required_argument
+  error - Undefined name 'UserType' - test\presentation\pages\dashboard\role_based_dashboard_test.dart:290:21 - undefined_identifier
+  error - Undefined name 'UserType' - test\presentation\pages\profile\profile_completion_page_test.dart:29:17 - undefined_identifier
+  error - Undefined name 'UserType' - test\presentation\pages\profile\profile_edit_page_test.dart:30:17 - undefined_identifier
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\presentation\pages\profile\profile_edit_page_test.dart:39:25 - missing_required_argument
+  error - Undefined name 'UserType' - test\presentation\pages\profile\profile_edit_page_test.dart:45:17 - undefined_identifier
+  error - The named parameter 'user' isn't defined - test\presentation\pages\profile\profile_edit_page_test.dart:58:34 - undefined_named_parameter
+  error - The named parameter 'name' is required, but there's no corresponding argument - test\presentation\pages\profile\profile_edit_page_test.dart:225:31 - missing_required_argument
+  error - Undefined name 'UserType' - test\presentation\pages\profile\profile_edit_page_test.dart:230:19 - undefined_identifier
+  error - The named parameter 'user' isn't defined - test\presentation\pages\profile\profile_edit_page_test.dart:241:34 - undefined_named_parameter
+
+385 issues found. (ran in 4.8s)

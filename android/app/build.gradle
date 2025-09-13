@@ -1,0 +1,152 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+// Environment configuration
+def getEnvironment = { ->
+    def env = project.hasProperty('environment') ? project.property('environment') : 'development'
+    return env
+}
+
+def getAppName = { env ->
+    switch (env) {
+        case 'staging':
+            return 'Tourlicity Staging'
+        case 'production':
+            return 'Tourlicity'
+        default:
+            return 'Tourlicity Dev'
+    }
+}
+
+def getApplicationId = { env ->
+    switch (env) {
+        case 'staging':
+            return 'com.tourlicity.app.staging'
+        case 'production':
+            return 'com.tourlicity.app'
+        default:
+            return 'com.tourlicity.app.dev'
+    }
+}
+
+android {
+    namespace "com.tourlicity.app"
+    compileSdk 34
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId getApplicationId(getEnvironment())
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion 34
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        
+        // Environment-specific configurations
+        buildConfigField "String", "ENVIRONMENT", "\"${getEnvironment()}\""
+        resValue "string", "app_name", getAppName(getEnvironment())
+    }
+
+    signingConfigs {
+        release {
+            keyAlias localProperties.getProperty('keyAlias')
+            keyPassword localProperties.getProperty('keyPassword')
+            storeFile localProperties.getProperty('storeFile') ? file(localProperties.getProperty('storeFile')) : null
+            storePassword localProperties.getProperty('storePassword')
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            buildConfigField "String", "BUILD_TYPE", "\"debug\""
+        }
+        
+        staging {
+            applicationIdSuffix ".staging"
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BUILD_TYPE", "\"staging\""
+            signingConfig signingConfigs.release
+        }
+        
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BUILD_TYPE", "\"release\""
+            signingConfig signingConfigs.release
+        }
+    }
+
+    flavorDimensions "environment"
+    
+    productFlavors {
+        development {
+            dimension "environment"
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+            buildConfigField "String", "API_BASE_URL", "\"https://dev-api.tourlicity.com/api/v1\""
+        }
+        
+        staging {
+            dimension "environment"
+            applicationIdSuffix ".staging"
+            versionNameSuffix "-staging"
+            buildConfigField "String", "API_BASE_URL", "\"https://staging-api.tourlicity.com/api/v1\""
+        }
+        
+        production {
+            dimension "environment"
+            buildConfigField "String", "API_BASE_URL", "\"https://api.tourlicity.com/api/v1\""
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.multidex:multidex:2.0.1'
+}
